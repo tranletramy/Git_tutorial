@@ -43,6 +43,12 @@ git remote add origin https://github.com/tranletramy/Git_tutorial.git
 git branch -M main
 git push -u origin main
 
+// ========== Clone from github to local ==============================
+git clone https://github.com/tranletramy/Git_tutorial.git
+
+// ============= git fetch | git merge | git pull ================================
+git fetch : download new info without changing your current files
+git pull : download and merge the latest changes => does 2 things: fetch and merge
 
  
 

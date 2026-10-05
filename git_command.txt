@@ -1,0 +1,22 @@
+git init 			initialize project to use git
+git add . 			add all changes to be saved
+git add *filename* 		add single file to be saved
+git commit -m "message" 	save changes with message 
+git push origin master 		push changes to GitHub master
+git push origin new-branch 	push changes to GitHub new-branch
+git pull origin master 		pull changes from GitHub master
+git checkout -b new-branch 	create a new branch
+git status			check status of changes
+git log				see all previous saved changes
+git checkout *commit hash*	travel back to old commit
+
+git cheat sheet ..............
+
+========== Configure Git for the 1st time ===============
+(this is like telling Git who you are. This info is used in your commits)
+git config --globle user.name "My Tran"
+//git config --globle user.email "tramy200816@gmail.com"
+git config --list			(list all config)
+
+
+

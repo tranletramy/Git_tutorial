@@ -50,6 +50,8 @@ git clone https://github.com/tranletramy/Git_tutorial.git
 git fetch : download new info without changing your current files
 git pull : download and merge the latest changes => does 2 things: fetch and merge
 Note: to get the latest changes from GitHub, you must 1st run git fetch to contact GitHub for new changes, if not Git will not know if there is any changes on GitHub 
+git merge origin/main 		merge GitHub changes into local branch
+
 
  
 

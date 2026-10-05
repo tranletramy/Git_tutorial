@@ -28,6 +28,22 @@ git branch 								to see all branches
 git branch cpm-analytics 						to create a new branch named cpm-analytics
 git checkout cpm-analytics						to switch to cpm-analytics branch
 git checkout -b cpm-analytics |or| git switch -c cpm-analytics 		to create branch cpm-analytics and switch to that new branch in 1 command
+
+// =================== merge branch to master ==========================
+1. go to master
+git checkout master 
+2. merger feature to master
+git merge cpm-analytics 
+
+// =================== delete new branch =======================
+git branch -d cpm-analytics
+
+// =================== or push an existing repository from local from the command line to GitHub ================
+git remote add origin https://github.com/tranletramy/Git_tutorial.git
+git branch -M main
+git push -u origin main
+
+
  
 
 

@@ -19,6 +19,15 @@ git config --globle user.name "My Tran"
 git config --list			(list all config)
 
 // =====================================================
+git diff 			to see the differences of the files before and after updated (changes that are not added to stage)
+git show HEAD~1:git_command.txt to see the previous version of file git_command.txt (one commit before the current one)
+git rm --cached demo.log 	to ask git stop tracking file demo.log if this file was tracked before we create .gitignore file
+
+// =============== new branches =======================
+git branch 			to see all branches 
+git branch cpm-analytics 	to create a new branch named cpm-analytics
+git checkout cpm-analytics	to switch to cpm-analytics branch 
+
 
 
 

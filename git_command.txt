@@ -57,9 +57,36 @@ git merge origin/main 		merge GitHub changes into local branch
 2. Decide what the final code should be, remove the conflict markers (<<<<<<<<<<, =========, >>>>>>>>>)
 3. Save file
 4. stage and commit the resolved file: 
-git add .
-git commit -m "resolve conflict"
-git push
+   git add .
+   git commit -m "resolve conflict"
+   git push
+
+// ======================= advance =========================
+  ** commit partial file 
+  git add -p  => press s during git add -p to split changes into smaller chunks 
+  ** restore deleted file 
+  git restore file.txt
+  ** restore staged deleted file
+  git restore --stage file.txt
+  git restore file.txt
+  ** restore deleted, staged and committed file
+  git restore --source=HEAD~1 file.txt    or git restore --source=4152145 file.txt
+  ** restore deleted, committed, and pushed file 
+  git restore --source=4125122 file.txt
+
+// =============== git cherry pick ====================
+1. In master branch, create a file project.txt and commit
+2. Checkout new branch 			git checkout -b branch-feature1
+3. In branch, make 2 separate commits 
+	commit 1: bugfix.txt
+	commit 2: dashboard.txt
+4. View history 			git log --oneline => copy the commit ID of commit fix bug
+5. Switch to master 			git checkout master
+6. Cherry-pick the bug fix 		git cherry-pick 142532
+7. Verify 				git log --oneline
+
+
+
 
 
 

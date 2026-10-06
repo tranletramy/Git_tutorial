@@ -85,7 +85,20 @@ git merge origin/main 		merge GitHub changes into local branch
 6. Cherry-pick the bug fix 		git cherry-pick 142532
 7. Verify 				git log --oneline
 
+// ================= blame ============================
+ ** to track to change what 
+git blame file.txt
+git show 153264
 
+// ================= reset ===============================
+to move the things back to the previous status, example: if I committed file.txt, then
+git reset --soft HEAD~1 	will move the file back to stage, not committed yet
+-----------------------------------------------------------------------------------
+Command 	Commit Removed		Changes Kept 		Changes Staged?
+--soft		      yes		     yes			yes
+--mixed (default)     yes		     yes			no
+--hard		      yes		     no				no
+------------------------------------------------------------------------------------
 
 
 

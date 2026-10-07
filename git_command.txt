@@ -91,6 +91,7 @@ git blame file.txt
 git show 153264
 
 // ================= reset ===============================
+use for local branch, not pushed to remote yet
 to move the things back to the previous status, example: if I committed file.txt, then
 git reset --soft HEAD~1 	will move the file back to stage, not committed yet
 -----------------------------------------------------------------------------------
@@ -101,7 +102,15 @@ Command 	Commit Removed		Changes Kept 		Changes Staged?
 ------------------------------------------------------------------------------------
 
 // ================= git reflog ==================================
+1. git reflog		to see all log history including reset steps, then use the log ID to reset to what we want
+2. git reset --hard 551636
 
+// ================= git revert ================================
+to create a new commint that reverses the changes in remote repo
+use for already pushed code
+
+// ==================== git stash =================================
+to put your current work to a temporary locker, then comeback later
 
 
 
